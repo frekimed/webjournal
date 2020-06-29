@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>My Web Dev Learning Journal</title>
+</head>
+
+<body>
+  <h6><a href="index.html">Back to Index</a></h6>
+  <hr>
+  <h1>Section 3: Intermediate HTML</h1>
+  <hr>
+  <!-- Lesson 20 -->
+  <h2>Lesson 20: HTML Tables</h2>
+  <p>Tables are a way to structure sites with aligned groups of data. While we generally think of tables having rows and columns, this isn't how they work in HTML.
+    In HTML, tables are organized as cells in a row, going from left to right.</p>
+  <h5>Example table</h5>
+  <table border="1">
+    <!-- This is required to begin/end the table -->
+    <thead>
+      <!-- Not required, but can be useful for styling with CSS/Javascript -->
+      <th>Date</th> <!-- The th element is specific to the thead element. It is similar to the td element, but browsers know to format these cells as header cells -->
+      <th>Description</th>
+      <th>This is the Header</th>
+    </thead>
+    <tbody>
+      <!-- The tbody element is not necessary unless using thead and tfoot. -->
+      <tr>
+        <!-- This element begins each new row. -->
+        <td>2010</td> <!-- This element defines each new cell, which is placed one after the other, from left to right -->
+        <td>Worked as a research assistant in the lab.</td>
+        <td>This is the first row</td>
+      </tr>
+      <tr>
+        <td>2011 - 2015</td>
+        <td>Clinical lead in fancy trial.</td>
+        <td>This is the second row.</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td>This is an example of the footer area.</td> <!-- Notice it uses td elements and not something like tf - as thead does. -->
+    </tfoot>
+  </table>
+  <p>
+    Table decoration attributes are largely deprecated in the HTML standards. It is preferable to use CSS to style tables.
+  </p>
+  <ul>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN: The Table element</a>
+    </li>
+  </ul>
+  <h2>Lesson 21: Using HTML Tables for Layout</h2>
+  <p>In this lesson, we used tables to place a picture on the left, and the heading text on the right.</p>
+  <p>We also use the <code>cellspacing=""</code> attribute. It should be noted that this attribute is deprecated; it is preferrable to use CSS to achieve the cellspacing.</p>
+  <h2>Lessons 22 - 24: Table Code Challenge and How to Type Emojis</h2>
+  <p>In order to achieve the look in the "Skills" section of the website, we nest a <code>table</code> within a <code>table</code>.</p>
+  <h3>Typing Emojis</h3>
+  <ul>
+    <li>On Windows 10, you can pull up the emoji keyboard in any application by pressing <strong>Win + . (period)</strong></li>
+  </ul>
+  <h2>Lesson 25: HTML Forms</h2>
+  <p>This section is all about forms and HTML inputs. Here are some examples of inputs:</p>
+  <!-- These inputs won't actually do anything, but just shows off some functionality -->
+  <form action="submit">
+    <label for="button">This is a button </label><input type="button" name="button"><br>
+    <label for="checkbox">Checkbox </label><input type="checkbox" name="checkbox"><br>
+    <label for="radio">This is a radio button </label><input type="radio" name="radio"><br>
+    <label for="color">Color picker </label><input type="color" name="color"><br>
+    <label for="date">Date picker </label><input type="date" name="date"><br>
+    <label for="datetime-local">Date <em>and</em> time picker </label><input type="datetime-local" name="datetime"><br>
+    <label for="email">Email address </label><input type="email" name="email"><br>
+    <label for="file">Choose file to upload </label><input type="file" name="file"><br>
+    <label for="hidden">This is a hidden field</label><input type="hidden" name="hidden"><br>
+    <label for="password">Passwords hide the text as you type </label><input type="password" name="password"><br>
+    <label for="range">This is a range slider </label><input type="range" name="range"><br>
+    <table>
+      <tr>
+        <td><input type="reset"></td>
+        <td><input type="submit"></td>
+      </tr>
+    </table>
+  </form>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN: The Form element</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN: The Input (Form Input) element</a></li>
+  </ul>
+  <h2>Lesson 26: Forms in Practice - Create a Contact Me Form</h2>
+  <p>Forms are difficult to utilize to their full potential without some additional coding in something like Javascript or PHP. However, there were some basic tricks that got this to at least a basic functional state:</p>
+  <ul>
+    <li>In the form element:</li>
+    <ul>
+      <li>The form action was set to <code>mailto:<em>user@domain.com</em></code>. This opens the default mail client with your input data.</li>
+      <li>An attribute called <code>enctype</code> was set to "text/plain". This removes odd formatting and just sends plain text to the mail client.</li>
+      <li>As a side note, if you leave the <code>action</code> attribute set to a webpage (i.e. index.html), the submit button will just take you to that page.</li>
+    </ul>
+    <li>To make a message input field, the <code>textarea</code> element was used. This element allows you to set the size of a text box.</li>
+  </ul>
+  <form class="" action="section3.html" method="post" enctype="text/plain">
+    <label for="textArea">This is an example of a text area: </label><br>
+    <textarea name="textArea" rows="4" cols="30"></textarea><br>
+    <input type="submit">
+  </form>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">MDN: The textarea element</a></li>
+  </ul>
+  <p>
+    Lesson 26 is just a skill check.
+  </p>
+
+  <h2>Lesson 27: Publish Your Website!</h2>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>My Web Dev Learning Journal</title>
+</head>
+
+<body>
+  <h6><a href="index.html">Back to Index</a></h6>
+  <hr>
+  <h1>Section 2: Introduction to HTML</h1>
+  <hr>
+  <!-- Lesson 12 - learning the first tags -->
+  <h1>👋 Hello World!</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+  <h4>H4</h4>
+  <h5>H5</h5>
+  <h6>H6</h6> <!-- There are only 6 levels of heading -->
+
+  <!-- Lesson 14 -->
+  <h2>Lesson 14: What is the HTML Boilerplate?</h2>
+  <ul>
+    <li>In Atom, you can simply type html and hit enter to create the header for an HTML document. This is done with the Emmet plugin. All of the capability of Emmet is on the <a href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a>.</li>
+    <li>You should always use UTF-8 or Unicode encoding. This will make the website the most compatible with browsers worldwide. UTF-8 also includes emojis. You can look up all current characters at <a href="unicode-table.com">Unicode Table</a>.</li>
+  </ul>
+
+  <!-- Lesson 15 -->
+  <h2>Lesson 15: How to Structure Text in HTML</h2>
+  <ul>
+    <li>Whenever you want to make something italicized, you should use the <em>em tag</em>, instead of the <i>i tag</i>. The em tag confers meaning ("this text requires emphasis") rather than just applying the style of italics.</li>
+    <li>Similarly, whenever trying to bold a word, it is generally recommended to use the <strong>strong tag</strong> as opposed to the <b>b tag</b>, for the same reasons.</li>
+  </ul>
+
+  <!-- Lesson 16 -->
+  <h2>Lesson 16: HTML Lists</h2>
+  <ul>
+    <li>This is an example of an un-ordered list. Unordered lists have bullets. You begin a list with the <code>ul</code> tag, and nest <code>li</code> tags under those to form each line of your list. </li>
+  </ul>
+  <ol>
+    <li>This is an example of an ordered list, using the <code>ol</code> tag.
+  </ol>
+  <ul>
+    <li>You can nest multiple list types and mix and match <code>ul</code> and <code>ol</code> when nesting.
+      <ol>
+        <li>This is an example of a nested <code>ol</code> within a <code>ul</code>.
+      </ol>
+  </ul>
+  <h3>Lists and their Attributes</h3>
+  <ul>
+    <li>The <code>ul</code>, <code>ol</code> and the <em>new</em><code>menu</code> tags must also have closing tags.
+      <ul>
+        <li><code>li</code> tags do not need to have closing tags, so long as they are nested under a parent tag (<code>ul</code>, <code>ol</code>, or <code>menu</code>).
+      </ul>
+    <li>Here are some references for list tags:
+      <ol>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">MDN: The Unordered List element</a>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">MDN: The Ordered List element</a>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">MDN: The Menu element</a>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">MDN: The List Item element</a>
+      </ol>
+  </ul>
+
+  <!-- Lesson 17 -->
+  <h2>Lesson 17: HTML Image Elements</h2>
+  <p>
+    Image elements do not need a closing tag, however they do need to have an <em>attribute</em> specified. At the very least, the <code>src=""</code> attribute will need to be set. This can either be a web address or a local target in relationship
+    to
+    the html file on your server.
+  </p>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">MDN: The Image Embed element</a>
+  </ul>
+
+  <!-- Lesson 18 -->
+  <h2>Lesson 18: HTML Links and Anchor Tags</h2>
+  <p>
+    The hypertext part of HTML refers to the idea of links and anchors. Hypertext allows one to link from a word or place in one document to another document.
+  </p>
+  <p>
+    The <code>a</code> tag, or anchor tag, always requires a reference attribute, <code>href=""</code>.
+  </p>
+  <ul>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN: The Anchor element</a>
+    </li>
+  </ul>
+</body>
+
+</html>
